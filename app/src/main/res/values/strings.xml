@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">InventoryManagement</string>
+    <string name="action_settings">Settings</string>
+    <string name="empty_view_title_text">No data to display</string>
+    <string name="empty_view_subtitle_text">Click on the ADD button to add a new item</string>
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+</resources>

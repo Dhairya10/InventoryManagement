@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_centerInParent="true"
+    android:layout_height="match_parent"
+    tools:context="com.portal.datadit.inventorymanagement.DetailsActivity">
+
+    <TextView
+        android:id="@+id/textviewProductName"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewProductPrice"
+        android:layout_alignStart="@+id/textViewProductPrice"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textViewProductPrice"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewProductQuantity"
+        android:layout_alignStart="@+id/textViewProductQuantity"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textViewProductQuantity"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewName"
+        android:layout_alignStart="@+id/textViewName"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewNumber"
+        android:layout_alignStart="@+id/imageView"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textViewNumber"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewMail"
+        android:layout_alignStart="@+id/textViewName"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textViewMail"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButtonDelete"
+        android:layout_alignStart="@+id/imageView"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+
+    <ImageButton
+        android:id="@+id/imageButtonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewMail"
+        android:layout_toEndOf="@+id/textViewClick"
+        android:background="@android:color/transparent"
+        android:src="@android:drawable/ic_menu_add"
+        android:tint="@android:color/background_dark" />
+
+    <ImageButton
+        android:id="@+id/imageButtonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonOrder"
+        android:layout_alignStart="@+id/textViewMail"
+        android:background="@android:color/transparent"
+        android:src="@android:drawable/ic_delete"
+        android:tint="@android:color/background_dark" />
+
+    <Button
+        android:id="@+id/buttonOrder"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:background="@android:color/black"
+        android:text="Order"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/black"
+        android:text="Delete"
+        android:textColor="@android:color/background_light" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp" />
+
+    <TextView
+        android:id="@+id/textViewClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_toEndOf="@+id/imageButtonDelete"
+        android:text="Click to view Image" />
+
+</RelativeLayout>
